@@ -18,6 +18,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
+  margin-left: -6px;
 }
 header h1,
 header h2 {
