@@ -1,141 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <h1>Wojciech Kogut</h1>
-    <h2>front-end developer</h2>
-    <div class="circle">
-      <i class="fas fa-arrow-alt-circle-down"></i>
+  <body>
+    <div class="container">
+      <section class="leftSidebar">
+        <div class="img">
+          <img src="./img/photo.jpg" alt="avatar" />
+        </div>
+        <section class="box">
+          <div class="title blue">
+            <strong>WOJCIECH KOGUT</strong>
+            <p>Frontend developer</p>
+          </div>
+          <div class="description">
+            <div class="item">
+              <img class="icon" src="./img/location.svg" alt="location" />
+              <p>Rzeszów</p>
+            </div>
+            <div class="item">
+              <img class="icon" src="./img/email.svg" alt="email" />
+              <a href="mailto:kogutw93@gmail.com"><p>kogutw93@gmail.com</p></a>
+            </div>
+            <div class="item">
+              <img class="icon" src="./img/phone.svg" alt="phone" />
+              <p>534-009-123</p>
+            </div>
+            <div class="item">
+              <img class="icon" src="./img/linkedin.svg" alt="linkedin" />
+              <a
+                href="https://www.linkedin.com/in/wojciech-kogut-b11894173/"
+                target="_blank"
+                >linkedin.com/wojciech-kogut</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="box">
+          <div class="title green">
+            <p>UMIEJĘTNOŚCI</p>
+          </div>
+          <div class="description">
+            <p>
+              HTML, CSS, JavaScript, React, TypeScript, Redux, Jest, Git, REST
+              API
+            </p>
+          </div>
+        </section>
+        <section class="box">
+          <div class="title yellow">
+            <p>JĘZYKI</p>
+          </div>
+          <div class="description">
+            <div class="box">
+              <p class="type">polski: ojczysty</p>
+            </div>
+            <div class="box">
+              <p class="type">angielski: B1</p>
+            </div>
+          </div>
+        </section>
+        <section class="box">
+          <div class="title red">
+            <p>HOBBY</p>
+          </div>
+          <div class="description">
+            <p>tworzenie gier 2D</p>
+            <p>konstrukcje drewniane</p>
+            <p>transurfing</p>
+          </div>
+        </section>
+      </section>
+      <main>
+        <div class="container">
+          <div class="experience">
+            <h2>DOŚWIADCZENIE ZAWODOWE</h2>
+            <div class="box">
+              <p class="companyName">mServices Sp. z o.o</p>
+              <p>Frontend / React developer</p>
+              <p class="time">2 lata 5 miesięcy</p>
+            </div>
+            <div class="box">
+              <p class="companyName">OPGK Rzeszów S.A.</p>
+              <p>Frontend / React developer</p>
+              <p class="time">2 lata</p>
+            </div>
+            <div class="box">
+              <p class="companyName">Moonbite sp. z o.o.</p>
+              <p>Frontend / Vuejs developer</p>
+              <p class="time">9 miesięcy</p>
+            </div>
+            <div class="box">
+              <p class="companyName">KISS Digital sp. z o.o.</p>
+              <p>Frontend / Vuejs developer</p>
+              <p class="time">7 miesięcy</p>
+            </div>
+          </div>
+          <div class="education">
+            <h2>EDUKACJA</h2>
+            <div class="box">
+              <p class="companyName">WSPIA Rzeszowska Szkoła Wyższa</p>
+              <p class="time">2013 - 2018</p>
+            </div>
+            <div class="box">
+              <p class="companyName">
+                Zespół Szkół Elektronicznych w Rzeszowie
+              </p>
+              <p class="time">2009 - 2013</p>
+            </div>
+          </div>
+          <div class="profile">
+            <h2>PROFIL</h2>
+            <p>
+              Jestem frontend developerem z ponad pięcioletnim doświadczeniem w
+              programowaniu, z czego trzy lata spędziłem na intensywnej pracy z
+              React. Moją główną pasją jest tworzenie interfejsów, które są
+              zarówno przyjemne w odbiorze dla użytkownika, jak i proste w
+              obsłudze. Mam bogate doświadczenie zdobyte w różnych środowiskach
+              – pracowałem zarówno w małych software house'ach, jak i dużych
+              korporacjach. Dzięki temu potrafię podejmować lepsze decyzje,
+              patrząc na problemy z różnych perspektyw.
+            </p>
+            <p>
+              Dążę do ciągłego rozwoju w obszarze frontend developmentu,
+              koncentrując się na dostarczaniu coraz lepszych rozwiązań. Moje
+              umiejętności obejmują projektowanie i implementację interaktywnych
+              komponentów, optymalizację wydajności aplikacji oraz dbałość o
+              detale, które sprawiają, że końcowy produkt jest intuicyjny i
+              estetyczny. Z determinacją i entuzjazmem podchodzę do każdego
+              projektu, dążąc do tworzenia wartościowych i innowacyjnych
+              rozwiązań.
+            </p>
+          </div>
+          <div class="policy">
+            <p>
+              Wyrażam zgodę na przetwarzanie moich danych osobowych również na
+              potrzeby przyszłych rekrutacji, zgodnie z art. 6 ust. 1 lit. a
+              Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z
+              dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w
+              związku z przetwarzaniem danych osobowych i w sprawie swobodnego
+              przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne
+              rozporządzenie o ochronie danych)
+            </p>
+          </div>
+        </div>
+      </main>
     </div>
-  </header>
-  <main>
-    <section class="project">
-      <div class="name">
-        <p class="title">Vue.js Weather App</p>
-        <div class="aGroup">
-          <a href="https://github.com/wojtekx/weather" target="_blank">See code</a>
-          <a href="https://wojtekx.github.io/gh-page-weather/" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/weather.png" alt="Weather App" />
-      </div>
-    </section>
-    <section class="project">
-      <div class="name">
-        <p class="title">Vue.js Shop</p>
-        <div class="aGroup">
-          <a href="https://github.com/wojtekx/shop" target="_blank">See code</a>
-          <a href="https://wojtekx.github.io/gh-page-shop/" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/shop.png" alt="Shop" />
-      </div>
-    </section>
-    <section class="project">
-      <div class="name">
-        <p class="title">Music App</p>
-        <div class="aGroup">
-          <a href="https://github.com/wojtekx/Projekt-praktyki" target="_blank">See code</a>
-          <a href="https://wojtekx.github.io/Projekt-praktyki/" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/itunes.jpg" alt="Music App" />
-      </div>
-    </section>
-    <section class="project">
-      <div class="name">
-        <p class="title">Example Page</p>
-        <div class="aGroup">
-          <a href="https://github.com/wojtekx/examplePage" target="_blank">See code</a>
-          <a href="https://wojtekx.github.io/examplePage/" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/example-page.png" alt="example-page" />
-      </div>
-    </section>
-    <section class="project">
-      <div class="name">
-        <p class="title">Random User</p>
-        <div class="aGroup">
-          <a href="https://wojtekx.github.io/randomuser/" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/random.png" alt="randomuser" />
-      </div>
-    </section>
-    <section class="project">
-      <div class="name">
-        <p class="title">Wordpress Site</p>
-        <div class="aGroup">
-          <a href="http://podskrzydlemaniola.pl/" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/podskrzydlem.png" alt="Wordpress" />
-      </div>
-    </section>
-    <section class="project">
-      <div class="name">
-        <p class="title">WoznyTransport</p>
-        <div class="aGroup">
-          <a href="http://woznytransport.pl" target="_blank">See live</a>
-        </div>
-      </div>
-      <div class="image">
-        <img src="./img/transport.png" alt="WoznyTransport" />
-      </div>
-    </section>
-    <section class="about">
-      <h2>O mnie</h2>
-      <div class="main">
-        <img src="./img/received_1794698533892765.jpeg" alt="portrait" />
-        <div class="desc">
-          <h5>Cześć</h5>
-          <p>Nazywam się Wojtek i mieszkam w Rzeszowie.</p>
-          <p>Słucham muzyki rockowej, podróżuje i aktywnie spędzam czas.</p>
-          <h6>Umiejętności</h6>
-          <p>JavaScript (Vue.js, React.js - podstawy)</p>
-          <p>CSS (SCSS, Bootstrap)</p>
-          <p>Photoshop (cięcie psd)</p>
-          <p>Git, Redmine</p>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <h2>Kontakt</h2>
-      <div class="images">
-        <a href="https://www.linkedin.com/in/wojciech-kogut-b11894173" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/wojtekx" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:wojtek.kogut@o2.pl">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    &copy Wojciech Kogut 2019
-  </footer>
-  <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

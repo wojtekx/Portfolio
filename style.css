@@ -2,218 +2,182 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-body {
-  min-height: 100vh;
-  background-color: #fffde6;
+.container {
+  display: flex;
 }
 
-header {
-  background-image: url("./img/business1.jpg");
-  background-position-x: center;
-  background-size: cover;
-  height: 100vh;
+.leftSidebar {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  margin-left: -6px;
-}
-header h1,
-header h2 {
-  color: white;
-  text-shadow: 0 0 5px black;
-  font-size: 55px;
-  padding: 100px 0 0 50px;
-}
-header h2 {
-  padding: 10px 0 0 50px;
-}
-header .circle {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
-  color: black;
-  animation: anim 1s linear 1s infinite alternate;
-  cursor: pointer;
-}
-@keyframes anim {
-  from {
-    text-shadow: 0 0 10px blue;
-  }
-  to {
-    text-shadow: 0 0 10px red;
-    transform: translate(-50%, 10px);
-  }
-}
-.image img {
-  width: 200px;
-  height: 160px;
-  box-shadow: 15px 15px 2px 2px #a8a5a5;
-}
-section.project {
-  display: flex;
-  padding: 10px;
-  margin: 20px;
-}
-.aGroup {
-  margin: 20px 0;
-}
-.aGroup a {
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  text-decoration: none;
-}
-.about {
-  background-image: url("./img/notebook-1280538_960_720.jpg");
-  background-size: cover;
-}
-.about h2 {
-  color: white;
-  padding: 30px 0 0 10px;
-  font-size: 65px;
-  text-shadow: 0 0 4px green;
-  text-align: center;
-}
-.about .main {
-  min-height: 75vh;
-}
-.about .main img {
-  width: 200px;
-  box-shadow: 0 0 10px 0px gold;
-  margin: 10px;
+  width: 15%;
+  background-color: aliceblue;
+  box-shadow: -3px 1px 19px black;
 }
 
-.about .main .desc h5 {
-  font-size: 23px;
-  margin-bottom: 3px;
+.leftSidebar .img img {
+  width: 100%;
+  height: 100%;
 }
-.about .main .desc h6 {
-  font-size: 23px;
-  margin-top: 20px;
-  margin-bottom: 3px;
+
+.leftSidebar .icon {
+  width: 16px;
+  height: 16px;
 }
-.contact h2 {
-  margin: 20px;
-  font-size: 35px;
-  text-align: center;
-}
-.contact .images {
+
+.leftSidebar .box .title {
+  padding: 10px 10px 10px 20px;
+  color: white;
+  width: 120%;
+  border-radius: 0 30px 30px 0;
+  height: 50px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #646464;
+  box-shadow: -3px 1px 19px black;
 }
-.contact .images a {
-  width: 250px;
-  height: 250px;
-  font-size: 50px;
+
+.leftSidebar .box .title.blue {
+  background-color: blue;
+  box-shadow: -3px -3px 6px #020285;
+}
+.leftSidebar .box .title.blue strong {
+  font-size: 20px;
+}
+
+.leftSidebar .box .title.yellow {
+  background-color: gold;
+  box-shadow: -3px -3px 6px rgb(219, 219, 39);
+}
+.leftSidebar .box .title.green {
+  background-color: green;
+  box-shadow: -3px -3px 6px rgb(11, 86, 11);
+}
+.leftSidebar .box .title.red {
+  background-color: red;
+  box-shadow: -3px -3px 6px rgb(158, 0, 0);
+}
+
+.leftSidebar .box .description {
+  margin-left: 20px;
+  padding: 20px 0;
+}
+
+.leftSidebar .box .description p {
+  margin-bottom: 5px;
+}
+
+.leftSidebar .box .description .item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.leftSidebar .box .description .item .icon {
+  margin-right: 10px;
+}
+
+main {
+  background-color: #13099dde;
+  color: white;
+  position: relative;
+  z-index: 0;
+  padding: 20px 60px;
+  width: 100%;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  margin: 0 auto;
+}
+
+main .container h2 {
+  font-weight: 900;
+  font-size: 30px;
+}
+main .container .time {
+  color: crimson;
+}
+
+.experience,
+.experience .box,
+.education,
+.education .box,
+.profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  margin: 30px;
-  border-radius: 10px;
-  box-shadow: 12px 8px 22px 0px #1b1b1b;
-  color: black;
-}
-.contact .images a:hover {
-  color: blue;
-}
-footer {
-  height: 50px;
-  background-color: black;
-  color: white;
+  flex-direction: column;
   text-align: center;
-  font-size: 15px;
-  padding: 10px;
+}
+
+.experience .box,
+.education .box {
+  margin-top: 15px;
+}
+
+.experience .box .companyName {
+  color: #00fde6;
+  font-size: 20px;
+}
+
+.education {
+  margin-top: 50px;
+}
+
+.education .box .companyName {
+  color: #fdba00;
+  font-size: 20px;
+}
+
+.profile,
+.policy {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.profile p {
+  margin-top: 15px;
+}
+
+.profile p::first-letter {
+  margin-left: 15px;
+}
+
+.policy {
+  font-size: 10px;
 }
 
 @media (max-width: 768px) {
-  section.project {
+  .container {
     flex-direction: column;
-    align-items: center;
-    margin: 30px auto;
   }
-  .about .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .leftSidebar {
+    width: 100%;
   }
-  .contact h2 {
-    font-size: 25px;
-    width: 50%;
-    margin: 0 auto;
+  .leftSidebar .box .title {
+    width: 100%;
+    border-radius: 30px;
     text-align: center;
-    margin-top: 20px;
-  }
-  .project .title {
-    text-align: center;
-  }
-  .about .main .desc {
-    padding: 10px;
-    color: white;
-    text-shadow: 0 0 4px black;
-    text-align: center;
-  }
-  .contact .images a {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (min-width: 768px) {
-  section.project {
-    justify-content: space-between;
-    margin: 200px 50px;
-    font-size: 30px;
-  }
-  section.project .image img {
-    width: 320px;
-    height: 260px;
-  }
-  .about .main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .about .main img {
-    width: 300px;
-    margin-bottom: 40px;
-  }
-  .about .main .desc {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px 20px;
-    border-radius: 10px;
-    line-height: 25px;
-  }
-  .about .main .desc {
-    padding: 20px;
-    color: white;
-    text-shadow: 0 0 4px black;
-    line-height: 28px;
-    font-size: 18px;
-  }
-}
-@media (min-width: 1000px) {
-  section.project {
-    margin: 200px 15%;
-  }
-  section.project .image img {
-    width: 380px;
-    height: 300px;
-  }
-  .about .main .desc {
-    padding: 15px;
-    color: white;
-    text-shadow: 0 0 4px black;
-    line-height: 35px;
-    font-size: 20px;
   }
 
-  .contact h2 {
-    font-size: 45px;
+  .leftSidebar .img {
+    width: 165px;
+    margin: 0 auto;
+  }
+  main {
+    padding: 20px 0;
+  }
+  main .container {
+    width: 90%;
   }
 }
